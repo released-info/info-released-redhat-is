@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--timestamp=1757809450-->
+<!--timestamp=1790025384-->
 
 <head>
   <meta charset="UTF-8">
@@ -17,20 +17,20 @@
   <link rel="icon" href="https://released.info/assets/img/technologies/redhat/redhat.ico" type="image/svg+xml">
   <meta name="description" content="Is Red Hat Enterprise Linux 11 Released?">
   <meta name="keywords" content="Linux, Red, Hat, Enterprise, release, date, when, os, operating, system">
-  <meta name=”robots” content="index, follow">
+  <meta name="robots" content="index, follow">
 
   <!-- facebook -->
   <meta property="og:url" content="https://is.redhat.released.info" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Is Red Hat Enterprise Linux 11 Released?" />
-  <meta property="og:description" content="Red Hat Enterprise Linux 11 will be released in 109 days! #released.info" />
+  <meta property="og:description" content="Red Hat Enterprise Linux 11 is not released. Still waiting! #released.info" />
   <meta property="og:image" content="https://released.info/assets/img/technologies/redhat/redhat-logo.png" />
 
   <!-- twitter -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="ReleasedInfo" />
   <meta name="twitter:title" content="Is Red Hat Enterprise Linux 11 Released?" />
-  <meta name="twitter:description" content="Red Hat Enterprise Linux 11 will be released in 109 days! #released.info" />
+  <meta name="twitter:description" content="Red Hat Enterprise Linux 11 is not released. Still waiting! #released.info" />
   <meta name="twitter:image" content="https://released.info/assets/img/technologies/redhat/redhat-logo.png" />
 
   <meta name="url" content="https://is.redhat.released.info" />
@@ -47,7 +47,7 @@
 
 <body>
 
-  <input id="released-days" type="hidden" value="109" />
+  <input id="released-days" type="hidden" value="-1" />
 
   <main role="main">
     <a href="https://released.info/index.html" class="go-back"><i class="bi bi-arrow-left"></i></a>
@@ -78,7 +78,7 @@
           <div class="col-lg-8">
 
             <div id="logo">
-              <span role="img" aria-label="${configuration.logoAlt}"
+              <span role="img" aria-label="Red Hat Enterprise Linux logo"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/redhat/redhat-logo.png&#39;);">
               </span>
             </div>
@@ -86,12 +86,13 @@
             <!-- CHOOSE ONE OF BELOW SECTIONS HERE -->
 
             
+            
+            <!-- A counter that reached zero falls back to "Not Yet" instead of an empty box until the state is updated -->
             <span>
-              <div class="odometer-content" id="counter">
-                <div id="odometer"></div>
+              <div class="white-box" id="not-yet">
+                Not Yet
               </div>
             </span>
-            
             
 
             <!-- END -->
@@ -101,12 +102,12 @@
         <div class="row">
           <div class="col-lg-8">
             <h3 id="highlightTextDescription1">
-              Days until Red Hat Enterprise Linux 11 is officially released
+              Red Hat Enterprise Linux 11 is in development but has <span class="btn-primary">no announced release date</span>, Red Hat ships a major version every three years
             </h3>
           </div>
           <div class="col-lg-8">
             <h4 id="highlightTextDescription2">
-              Red Hat Enterprise Linux 10 release is planned to be in <span class="btn-primary">2025</span>
+              Red Hat Enterprise Linux 10 has been released on <span class="btn-primary">20th May 2025</span>, the latest minor release 10.2 came out on 19th May 2026
             </h4>
           </div>
         </div>
@@ -129,13 +130,19 @@
 
             <ul>
               <li>
-                Red Hat Enterprise Linux Lightspeed
+                Modularity removed, plain versioned RPM streams
               </li>
             </ul>
 
             <ul>
               <li>
-                Enhanced Developer Tools
+                Branches from Fedora 46 and CentOS Stream
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                Deprecations announced three years in advance
               </li>
             </ul>
 
@@ -143,22 +150,27 @@
           <div class="col-md-5">
             <ul>
               <li>
-                Improved Image Creation
+                Three-year major release cadence
               </li>
             </ul>
             <ul>
               <li>
-                Advanced Container Support
+                Planned focus: AI, edge, ARM v9 and RISC-V
+              </li>
+            </ul>
+            <ul>
+              <li>
+                Planned: a more modular, constructible platform
               </li>
             </ul>
           </div>
         </div>
         <div class="text-center">
-          <a target="_blank" href="https://www.redhat.com/en/blog/red-hat-enterprise-linux-10-beta-now-available" class="btn btn-primary btn-lg">Read more</a>
+          <a target="_blank" href="https://www.redhat.com/en/blog/simplifying-red-hat-enterprise-linux-planning-removal-modularity-red-hat-enterprise-linux-11" class="btn btn-primary btn-lg">Read more</a>
         </div>
       </div>
       <div class="logo-container">
-        <span role="img" aria-label="${configuration.logoAlt2}"
+        <span role="img" aria-label="Linux RedHat logo"
           style="background-image: url(&#39;https://released.info/assets/img/technologies/redhat/redhat-logo2.png&#39;);">
         </span>
       </div>
@@ -175,7 +187,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: Red Hat Enterprise Linux 8 Essentials"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/redhat/book-red-hat-enterprise-linux-8-essentials.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Neil-Smyth/dp/0986027391?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=160b3acacecbe97dbbf20ea3840bd857&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -189,7 +201,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: Red Hat Enterprise Linux 8"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/redhat/book-red-hat-enterprise-linux.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Asghar-Ghori/dp/1775062120?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=3166ec0413445a176d89b9c7cc66a818&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -203,7 +215,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: Red Hat Enterprise Linux 8"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/redhat/book-red-hat-enterprise-linux-exam.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Asghar-Ghori/dp/1775062147?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=4927a2fc771d8.755ff0a1a1cac34351&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -217,7 +229,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: Red Hat Enterprise Linux Troubleshooting Guide"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/redhat/book-red-hat-enterprise-linux-troubleshooting-guide.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Benjamin-Cane/dp/178528.753?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=1e78c4f26fb2ce51f36c880a10714257&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -231,7 +243,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: Red Hat Linux Certification Study Guide"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/redhat/book-red-hat-linux-certification-study-guide.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Michael-Jang-ebook/dp/B01DB3H8AM?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=0d971f3388b7a62ac053cb9ad5a4acc5&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -245,7 +257,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: Red Hat RHCSA 8 Cert Guide"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/redhat/book-red-hat-8-cert-guide.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Sander-van-Vugt-ebook/dp/B08171QYYJ?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=4eb7b18782a0de5a215d93529f8f17e2&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -319,9 +331,7 @@
         knowing that many businesses rely on the stability and well-functioning of the system.<br />
         <h3>Releases</h3>
         The current release of Red Hat allows for an individual to download most of the main features to 16 machines
-        (nodes) or less, meaning that small businesses could still leverage it. The stable release nowadays is 8.4,
-        released on May 18th, 2021. There is not a clear indication of when the next version will be released,
-        or what exactly will come with it.
+        (nodes) or less, meaning that small businesses could still leverage it. The current major version is Red Hat Enterprise Linux 10, released on 20th May 2025; the latest minor release, RHEL 10.2, came out on 19th May 2026. RHEL 11 is in development (branching from Fedora 46) but has no announced release date.
     </div>
 </div>
       </div>
